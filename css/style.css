@@ -1,0 +1,249 @@
+body{
+    font-family: Roboto, "Open Sans", sans-serif;
+    background-color: #1e202b;
+    font-size: 14px;
+    font-weight: 300;
+    position: relative;
+}
+
+.blueColor{
+    color: #009ad8;
+}
+/*_______________navbar section_________________*/
+.imgsize{
+    width: 64px;
+    height: 38px;
+}
+
+.bg-color{
+    background-color: #1e202b;;
+}
+
+.navbar-dark .navbar-toggler {
+    border: 2px solid transparent;
+    color: white;
+    padding: 20px;
+    border-radius: 40px;
+   
+}
+
+
+/* .navbar-nav{
+    overflow: hidden;
+} */
+
+.navbar-dark .navbar-toggler:hover{
+    border-color: #009ad8;
+}
+
+.navbar-collapse {
+    padding: 20px;
+    text-align: center;;
+}
+.navbar-brand sub{
+    font-size: 10px;
+    color: #BFC1C8;   
+}
+sub {
+    bottom: -2em;
+    left: -7.7em;
+}
+.nav-item{
+    padding-left: 8px;
+    padding-top: 8px;
+}
+.navbar-dark .navbar-nav .nav-link {
+    border: 2px solid  transparent;
+    color: #fff; 
+    padding: 5px 25px;
+   
+    
+    
+}
+
+.navbar-dark .navbar-nav .nav-link:hover{
+    border: 2px solid  #009ad8;
+    border-radius: 30px;
+    color: #009ad8;
+  
+}
+
+.navbar-dark .navbar-nav .active>
+.nav-link, .navbar-dark .navbar-nav 
+.nav-link.active  {
+    border: 2px solid  #009ad8;
+    color: #009ad8;
+}
+.home{
+    border: 2px solid  #009ad8;
+    border-radius: 30px;
+}
+
+/*________________________________search section________________________________*/
+ .bg-img{
+     background-image: url("../images/banner.png");
+     background-size: cover;
+     min-height: 500px;
+     padding: 70px 0px;
+ }
+
+form{
+    position: relative;
+    margin-bottom: 70px
+}
+ .bg-input{
+    border-style: none;
+    padding: 10px;
+    border-radius: 30px;
+    width: 100%;
+    color: white;
+    padding: 20px 50px 20px 20px;
+    background: rgb(30, 32, 43);
+ }
+
+.babyBlue{
+    background: rgb(0, 154, 216);
+    font-size: 14px;
+}
+
+input:focus{
+    outline: none;
+}
+ 
+/*_____________________section 3______________________*/
+ 
+.boxs{
+    position: absolute;
+    top:50%;
+    left:0;
+    right: 0;
+    z-index: 999;
+}
+
+.item{
+  
+    border-radius: 10px;
+    overflow: hidden;
+  
+  }
+.itembox{
+    padding: 30px 20px;
+    background-color: rgba(50, 53, 68, 1);
+}
+.day p{
+    margin: 0px;
+}
+
+.day  {
+   text-align: center;
+    padding:10px;
+    color: #BFC1C8;
+    background-color: #2d303d;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.tempToday{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-icon  img{
+    width:21px;
+    height: 21px;
+    margin-right: 14px;
+
+}
+
+.img-icon span{
+    padding-right: 5px;
+}
+.Btemp{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+
+/*___________________________________Footer_____________________________*/
+
+.footer{
+    background: #262936;
+    padding: 50px 0;
+    position: absolute;
+    bottom: -470px;
+    left:0;
+    right: 0;
+
+}
+
+.btn-postion{
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    /* bottom: 5px; */
+    /* padding: 20px 50px 14px 50px; */
+    padding: 14px 40px;
+    border-radius: 30px ;
+}
+
+.social-links a{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50%;
+    background: #1e202b;
+    color: #009ad8;
+    text-align: center;
+    transition: 0.3s ease;
+    line-height: 2;
+    font-size: 20px;
+
+}
+
+
+
+
+
+@media (min-width:768px) and (max-width:992px) {
+
+    .temperature h1{
+        font-size: 30px;
+    }
+    
+    .img-icon  img{
+        width:15px;
+        height: 15px;
+        margin-right: 7px;
+    
+    }
+
+    .footer{
+        background: #262936;
+        padding: 50px 0;
+        position: absolute;
+        bottom: -1150px;
+        left:0;
+        right: 0;
+        z-index: 9999;
+    
+    }
+   
+    
+}
+
+@media (max-width:767px){
+
+    .footer{
+        background: #262936;
+        padding: 50px 0;
+        position: absolute;
+        bottom: -1120px;
+        left:0;
+        right: 0;
+        z-index: 99999;
+    
+    }
+};

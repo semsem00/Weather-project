@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" 
+    type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-color p-5">
+        <a class="navbar-brand " href="#">
+            <img src="images/logo2x.png" class="imgsize mx-3" >Weather  <sub>tagline goes here</sub></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active ">
+              <a class="nav-link home" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Live Cameras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Photos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+          </ul>
+          
+        </div>
+      </nav>
+
+    <div class=" bg-img position-relative ">
+        <form class="container">
+            <input class="bg-input w-100 position-relative"  type="search" placeholder="Find your location..." id="searchInp">
+           
+        </form>
+
+        <div class="row  boxs container mx-auto">
+            <div class="col-lg-4 my-3 ">
+                <div class="item  text-white ">
+                    <div class="day">
+                     <p id="today">sunday</p>
+                     <p id="todayDate">9 May</p>
+                    </div>
+                   
+                   <div class="itembox">
+                      <h6 id="locationNow">Cairo</h6>
+                       <div class="tempToday d-flex justify-content-around ">
+                            <div class="temperature">
+                               <h1 id="temp"></h1>
+                            </div>
+                            <div class="forecast-icon text-center">
+                                <img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" id="imgWeather1" alt="weather" width="90">
+                            </div>
+                       </div>
+                       
+                        <div class="img-icon my-2  ">
+                            <p class="blueColor my-3" id="describingWeather1">clear</p>
+                            <span id="humidty">20%</span><img src="images/icon-umberella2x.png"   alt="umberella">
+                            <span id="wind">18Km/h</span><img src="images/icon-wind2x.png" alt="wind">
+                            <span id="compass">East</span><img src="images/icon-compass2x.png" alt="compass">
+                        </div>
+                   </div>
+                </div>
+            </div>
+
+            
+            <div class="col-lg-4 my-3">
+                <div class="item  text-white">
+                    <div class="day">
+                     <p id="nextDay">monday</p>
+                     <p id="DateNextDay">9 May</p>
+                    </div>
+                  <div class="itembox text-center">
+                        <div class="forecast-icon text-center">
+                            <img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" id="imgWeather2" alt="" width="90">
+                        </div>
+                        <div class="temperatureNext">
+                           <p id="tempBig" class="Btemp">34</p>
+                           <p id="tempSmall">21.3</p>
+                        </div>
+                       
+                        <div class="blueColor" id="describingWeather2">
+                            Partly cloudy
+                        </div>
+                  </div>
+                </div>
+            </div>
+            <div class="col-lg-4 my-3">
+                <div class="item  text-white">
+                    <div class="day">
+                     <p id="nextNextDay">monday</p>
+                     <p id="DateNxtNext">9 May</p>
+                    </div>
+                  <div class="itembox text-center">
+                        <div class="forecast-icon text-center">
+                            <img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" id="imgWeather3" alt="" width="90">
+                        </div>
+                        <div class="temperatureNextNext">
+                           <p id="tempBigNext"  class="Btemp">34</p>
+                           <p id="tempSmallNext">21.3</p>
+                        </div>
+                       
+                        <div class="blueColor" id="describingWeather3">
+                            Partly cloudy
+                        </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+
+<div class="footer text-center">
+    <form class="container position-relative">
+        <input class="bg-input w-100 position-relative" type="email" placeholder="Enter your email to subscribe..." id="emailInp">
+        <p class="alert alert-success d-none my-3 rounded-pill" id="succsess">Your Email is Valid</p>
+        <p class="alert alert-danger d-none my-3 rounded-pill"id="failed">Your Email is Not Valid</p>
+        <button class="btn babyBlue  text-white btn-lg btn-postion " id="btnSubscribe">Subscribe</button>
+    </form>
+
+
+    <div class="social-links container">
+        <a href="http://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+        <a href="http://www.twitter.com"><i class="fab fa-twitter"></i></a>
+        <a href=""><i class="fab fa-google-plus-g"></i></a>
+        <a href=""><i class="fab fa-pinterest"></i></a>
+
+        <p class="text-white my-2">Copyright 2021 Company name. Designed by Themezy. All rights reserved</p>
+    </div>
+</div>
+
+
+
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
