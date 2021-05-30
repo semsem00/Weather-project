@@ -48,7 +48,7 @@ searchInp.addEventListener("keyup", function(e) {
 });
 
 async function getWeather (){
-    weatherApi = await fetch (`http://api.weatherapi.com/v1/forecast.json?key=931ae7f4bd104dfb8d2135804210905&q=${locName}&days=3&aqi=no&alerts=no`);
+    weatherApi = await fetch (`https://api.weatherapi.com/v1/forecast.json?key=931ae7f4bd104dfb8d2135804210905&q=${locName}&days=3&aqi=no&alerts=no`);
     weatherData = await weatherApi.json();
     console.log(weatherData);
     TodayWeather();
